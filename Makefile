@@ -8,7 +8,7 @@ BIN_DIRECTORY   = _bin
 EXECUTABLE_NAME = terraform-provider-$(PROVIDER_NAME)
 DIST_ZIP_PREFIX = $(EXECUTABLE_NAME).v$(VERSION)
 
-REPO_BASE     = github.com/DimensionDataResearch
+REPO_BASE     = github.com/hhakkaev
 REPO_ROOT     = $(REPO_BASE)/dd-cloud-compute-terraform
 PROVIDER_ROOT = $(REPO_ROOT)/$(PROVIDER_NAME)
 VENDOR_ROOT   = $(REPO_ROOT)/vendor

@@ -3,8 +3,8 @@ package models
 import (
 	"fmt"
 
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/maps"
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/maps"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 // Image represents the Terraform configuration for a ddcloud_server image.

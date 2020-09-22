@@ -5,7 +5,7 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 const (

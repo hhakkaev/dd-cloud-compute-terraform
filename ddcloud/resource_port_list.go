@@ -3,7 +3,7 @@ package ddcloud
 import (
 	"log"
 
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 

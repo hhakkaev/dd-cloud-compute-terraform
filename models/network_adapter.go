@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/maps"
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/maps"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 // NetworkAdapter represents the Terraform configuration for a ddcloud_server network_adapter.

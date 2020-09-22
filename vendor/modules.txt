@@ -6,8 +6,8 @@ cloud.google.com/go/internal/optional
 cloud.google.com/go/internal/trace
 cloud.google.com/go/internal/version
 cloud.google.com/go/storage
-# github.com/DimensionDataResearch/go-dd-cloud-compute v1.3.0-alpha1
-github.com/DimensionDataResearch/go-dd-cloud-compute/compute
+# github.com/hhakkaev/go-dd-cloud-compute v1.3.0-alpha1
+github.com/hhakkaev/go-dd-cloud-compute/compute
 github.com/DimensionDataResearch/go-dd-cloud-compute/compute/requests
 # github.com/agext/levenshtein v1.2.2
 github.com/agext/levenshtein

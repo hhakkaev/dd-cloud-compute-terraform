@@ -27,6 +27,6 @@ deploy:
   file_glob: true
   file: _bin/terraform-provider-ddcloud.*.zip
   on:
-    repo: DimensionDataResearch/dd-cloud-compute-terraform
+    repo: hhakkaev/dd-cloud-compute-terraform
     branch: development\/v12.0
   skip_cleanup: 'true'

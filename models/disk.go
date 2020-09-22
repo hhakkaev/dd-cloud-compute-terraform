@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/maps"
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/maps"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 // SCSIPath builds a path representing the specified SCSI bus number and logical unit ID.

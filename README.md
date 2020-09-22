@@ -35,7 +35,7 @@ Requires Terraform v0.8.x or newer (currently built against Terraform v0.11.x).
 
 ## Installing the provider
 
-Download the [latest release](https://github.com/DimensionDataResearch/dd-cloud-compute-terraform/releases/latest) and place the provider executable in the same directory as the main Terraform executable.
+Download the [latest release](https://github.com/hhakkaev/dd-cloud-compute-terraform/releases/latest) and place the provider executable in the same directory as the main Terraform executable.
 
 ### Docker
 

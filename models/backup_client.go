@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/maps"
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/maps"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 // ServerBackupClient represents a backup client assigned to a server.

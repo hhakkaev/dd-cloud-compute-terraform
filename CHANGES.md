@@ -6,11 +6,11 @@ Breaking Changes:
 
 ### v1.3.8
 
-* Handle missing server when checking for existence of server network adapter (DimensionDataResearch/dd-cloud-compute-terraform#114).
+* Handle missing server when checking for existence of server network adapter (hhakkaev/dd-cloud-compute-terraform#114).
 
 ### v1.3.7
 
-* Bug-fix: create / update of `ddcloud_server` resource fails if server is running and disk configuration needs to be updated (DimensionDataResearch/dd-cloud-compute-terraform#116).
+* Bug-fix: create / update of `ddcloud_server` resource fails if server is running and disk configuration needs to be updated (hhakkaev/dd-cloud-compute-terraform#116).
 
 ### v1.3.6
 
@@ -22,8 +22,8 @@ Breaking Changes:
 
 ### v1.3.4
 
-* Implement `ddcloud_server_backup` resource type (DimensionDataResearch/dd-cloud-compute-terraform#26).
-* Expose downoad URLs for backup clients on computed `backup_client_urls` attribute of `ddcloud_server` resource type  (DimensionDataResearch/dd-cloud-compute-terraform#26).
+* Implement `ddcloud_server_backup` resource type (hhakkaev/dd-cloud-compute-terraform#26).
+* Expose downoad URLs for backup clients on computed `backup_client_urls` attribute of `ddcloud_server` resource type  (hhakkaev/dd-cloud-compute-terraform#26).
 
 ### v1.3.4-preview1
 
@@ -33,32 +33,32 @@ Breaking Changes:
 ### v1.3.3
 
 * Defer `ddcloud_server_backup` until v1.3.4 (final).
-* Bug-fix: `ssl_offload_profile` property is not being persisted by `ddcloud_virtual_listener` (DimensionDataResearch/dd-cloud-compute-terraform#110).
+* Bug-fix: `ssl_offload_profile` property is not being persisted by `ddcloud_virtual_listener` (hhakkaev/dd-cloud-compute-terraform#110).
 * Use v2.6 API for ddcloud_virtual_listener.
 * Ignore changes to `private_key` property of `ddcloud_ssl_domain_certificate`.  
   This is required because the private key is not persisted in state data.
 
 ### v1.3.3-preview1
 
-* Implement `ddcloud_server_backup` resource type (DimensionDataResearch/dd-cloud-compute-terraform#26).
-* Expose downoad URLs for backup clients on computed `backup_client_urls` attribute of `ddcloud_server` resource type  (DimensionDataResearch/dd-cloud-compute-terraform#26).
+* Implement `ddcloud_server_backup` resource type (hhakkaev/dd-cloud-compute-terraform#26).
+* Expose downoad URLs for backup clients on computed `backup_client_urls` attribute of `ddcloud_server` resource type  (hhakkaev/dd-cloud-compute-terraform#26).
 
 ### v1.3.2
 
-* Expose SSL-offload profile on `ddcloud_virtual_listener` (DimensionDataResearch/dd-cloud-compute-terraform#104).
-* Implement `ddcloud_ssl_offload_profile` resource type (DimensionDataResearch/dd-cloud-compute-terraform#104).
-* Implement `ddcloud_ssl_domain_certificate` resource type (DimensionDataResearch/dd-cloud-compute-terraform#104).
-* Implement `ddcloud_ssl_certificate_chain` resource type (DimensionDataResearch/dd-cloud-compute-terraform#104).
-* Implement `ddcloud_pfx` data source (DimensionDataResearch/dd-cloud-compute-terraform#104).
+* Expose SSL-offload profile on `ddcloud_virtual_listener` (hhakkaev/dd-cloud-compute-terraform#104).
+* Implement `ddcloud_ssl_offload_profile` resource type (hhakkaev/dd-cloud-compute-terraform#104).
+* Implement `ddcloud_ssl_domain_certificate` resource type (hhakkaev/dd-cloud-compute-terraform#104).
+* Implement `ddcloud_ssl_certificate_chain` resource type (hhakkaev/dd-cloud-compute-terraform#104).
+* Implement `ddcloud_pfx` data source (hhakkaev/dd-cloud-compute-terraform#104).
 
 ### v1.3.0
 
 * Switch to Terraform v0.9.11.
-* Implement resource import for `ddcloud_networkdomain`  (DimensionDataResearch/dd-cloud-compute-terraform#73).
-* Implement resource import for `ddcloud_vlan` (DimensionDataResearch/dd-cloud-compute-terraform#90).
-* Implement resource import for `ddcloud_server` (DimensionDataResearch/dd-cloud-compute-terraform#91).
-* Implement resource import for `ddcloud_nat` (DimensionDataResearch/dd-cloud-compute-terraform#92).
-* Implement resource import for `ddcloud_firewall_rule` (DimensionDataResearch/dd-cloud-compute-terraform/issues/93).
+* Implement resource import for `ddcloud_networkdomain`  (hhakkaev/dd-cloud-compute-terraform#73).
+* Implement resource import for `ddcloud_vlan` (hhakkaev/dd-cloud-compute-terraform#90).
+* Implement resource import for `ddcloud_server` (hhakkaev/dd-cloud-compute-terraform#91).
+* Implement resource import for `ddcloud_nat` (hhakkaev/dd-cloud-compute-terraform#92).
+* Implement resource import for `ddcloud_firewall_rule` (hhakkaev/dd-cloud-compute-terraform/issues/93).
 
 ### v1.3.0-beta1
 
@@ -300,7 +300,7 @@ Changes:
 
 Breaking changes:
 
-* Environment variables that previously had a `DDCLOUD_` prefix will now have an `MCP_` prefix (required for [docker-machine-driver-ddcloud #4](https://github.com/DimensionDataResearch/docker-machine-driver-ddcloud/issues/4))
+* Environment variables that previously had a `DDCLOUD_` prefix will now have an `MCP_` prefix (required for [docker-machine-driver-ddcloud #4](https://github.com/hhakkaev/docker-machine-driver-ddcloud/issues/4))
 
 #### v1.1.2
 
@@ -345,7 +345,7 @@ New features:
 
 Fixes:
 
-* Fix for incorrect behaviour when adding VIP pool members with a specific port ([#17](https://github.com/DimensionDataResearch/dd-cloud-compute-terraform/pull/17/))
+* Fix for incorrect behaviour when adding VIP pool members with a specific port ([#17](https://github.com/hhakkaev/dd-cloud-compute-terraform/pull/17/))
 * `ddcloud_virtual_listener`'s `ipv4` address property is now computable (and captured during create / read).
 * If there are no available public IP addresses when creating a `ddcloud_virtual_listener` without explicitly specifying an IPv4 address for the listener (i.e. CloudControl will allocate an IPv4 address), the provider will now automatically allocate a public IP block (similar to the behaviour of `ddcloud_nat_rule`).
 

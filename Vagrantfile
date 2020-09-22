@@ -36,7 +36,7 @@ cat <<EOF >>~/.bashrc
 ## Make sure we have the source for Terraform itself
 go get -u github.com/hashicorp/terraform
 ## After login, change to dd-cloud-compute-terraform directory
-cd /opt/gopath/src/github.com/DimensionDataResearch/dd-cloud-compute-terraform
+cd /opt/gopath/src/github.com/hhakkaev/dd-cloud-compute-terraform
 EOF
 sudo mv /tmp/gopath.sh /etc/profile.d/gopath.sh
 sudo chmod 0755 /etc/profile.d/gopath.sh
@@ -47,7 +47,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "terraform-ddcloud"
 
   config.vm.provision "shell", inline: $script, privileged: false
-  config.vm.synced_folder '.', '/opt/gopath/src/github.com/DimensionDataResearch/dd-cloud-compute-terraform'
+  config.vm.synced_folder '.', '/opt/gopath/src/github.com/hhakkaev/dd-cloud-compute-terraform'
 
   ["vmware_fusion", "vmware_workstation"].each do |p|
     config.vm.provider p do |v|

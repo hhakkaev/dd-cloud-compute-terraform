@@ -3,7 +3,7 @@ package models
 import (
 	"testing"
 
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/assert"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/assert"
 )
 
 // Unit test - given 0 network adapters, subtract 3 network adapters.

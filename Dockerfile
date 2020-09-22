@@ -22,13 +22,13 @@ RUN git clone https://github.com/hashicorp/terraform.git ./ && \
 
 
 ## DDCloud Provider
-WORKDIR $GOPATH/src/github.com/DimensionDataResearch/dd-cloud-compute-terraform
-RUN git clone https://github.com/DimensionDataResearch/dd-cloud-compute-terraform.git ./ && \
+WORKDIR $GOPATH/src/github.com/hhakkaev/dd-cloud-compute-terraform
+RUN git clone https://github.com/hhakkaev/dd-cloud-compute-terraform.git ./ && \
     # git checkout v${DDCLOUD_VERSION} && \
     git checkout development/v${DDCLOUD_VERSION} && \
     go get github.com/pkg/errors && \
     go get golang.org/x/crypto/pkcs12 && \
-    go get github.com/DimensionDataResearch/go-dd-cloud-compute/compute && \
+    go get github.com/hhakkaev/go-dd-cloud-compute/compute && \
     make dev
 
 

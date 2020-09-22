@@ -5,7 +5,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/DimensionDataResearch/dd-cloud-compute-terraform/ddcloud"
+	"github.com/hhakkaev/dd-cloud-compute-terraform/ddcloud"
 	"github.com/hashicorp/terraform-plugin-sdk/plugin"
 )
 

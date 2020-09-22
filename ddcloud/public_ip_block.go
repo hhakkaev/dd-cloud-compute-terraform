@@ -3,7 +3,7 @@ package ddcloud
 import (
 	"fmt"
 
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 func addPublicIPBlock(networkDomainID string, apiClient *compute.Client) (*compute.PublicIPBlock, error) {

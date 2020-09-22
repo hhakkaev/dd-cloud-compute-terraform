@@ -4,7 +4,7 @@ import (
 	"log"
 	"sort"
 
-	"github.com/DimensionDataResearch/go-dd-cloud-compute/compute"
+	"github.com/hhakkaev/go-dd-cloud-compute/compute"
 )
 
 // TODO: Consider implementing Disks.CalculateActions([]compute.VirtualMachineDisk)
