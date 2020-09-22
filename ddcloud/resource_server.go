@@ -7,11 +7,11 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/hhakkaev/dd-cloud-compute-terraform/models"
 	"github.com/hhakkaev/dd-cloud-compute-terraform/retry"
 	"github.com/hhakkaev/dd-cloud-compute-terraform/validators"
 	"github.com/hhakkaev/go-dd-cloud-compute/compute"
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 const (
@@ -1308,7 +1308,7 @@ func readServerBackupClientDownloadURLs(serverID string, data *schema.ResourceDa
 	// Skip backup details as backup is not supported in appliances, a.k.a. otherunix.
 	os := strings.ToUpper(data.Get(resourceKeyServerOSType).(string))
 
-	if strings.Contains(os, "OTHERUNIX") || os == "" {
+	if strings.Contains(os, "OTHER") || strings.Contains(os, "UN") || strings.Contains(os, "WIN") || strings.Contains(os, "LIN") || strings.Contains(os, "CEN") || os == "" {
 		log.Printf("Backup is not supported for server '%s'.", serverID)
 		data.Set(resourceKeyServerBackupEnabled, false)
 		data.Set(resourceKeyServerBackupClientDownloadURLs, nil)
