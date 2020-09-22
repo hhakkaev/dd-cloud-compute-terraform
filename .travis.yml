@@ -16,7 +16,7 @@ install:
 script:
   - make dist
 before_deploy:
-  - export TRAVIS_TAG="v3.0.4"
+  - export TRAVIS_TAG="v3.0.4.1"
   - git tag $TRAVIS_TAG
 deploy:
   provider: releases
@@ -28,5 +28,5 @@ deploy:
   file: _bin/terraform-provider-ddcloud.*.zip
   on:
     repo: hhakkaev/dd-cloud-compute-terraform
-    branch: development\/v12.0
+    branch: development\/v3.0
   skip_cleanup: 'true'
